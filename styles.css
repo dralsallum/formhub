@@ -1,0 +1,121 @@
+:root {
+  --main-background-color: #000000;
+  --secondary-background-color: #ffffff;
+  --button-background-color: #e6007e;
+  --main-font-color: #b9b9b9;
+  --sec-font-color: #606060;
+  --secondary-font-color: #ffffff;
+  --main-font-size: 28px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  font-family: "Amiri", serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: var(--main-font-size);
+  color: var(--main-font-color);
+  color: var(--main-font-color);
+  background-color: var(--main-background-color);
+  width: 100%;
+  height: 100%;
+}
+
+.containerRight {
+  flex: 3;
+  padding: 10px 30px;
+  width: 100%; /* Adjust as needed */
+  height: 100%; /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-size: var(--main-font-size);
+  color: var(--main-font-color);
+}
+
+.headerBottom {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 40px;
+  font-size: var(--main-font-size);
+  color: var(--main-font-color);
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.grid {
+  display: grid;
+  color: var(--sec-font-color);
+  font-size: 14px;
+  grid-template-columns: 1fr 1fr; /* creates 2 columns */
+  grid-template-rows: 1fr 1fr 1fr; /* creates 3 rows */
+  gap: 10px; /* optional - adds a gap between the grid items */
+}
+
+.make {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border-radius: 4px;
+  padding: 10px 10px;
+  border: none;
+  font-family: "Amiri", serif;
+
+  &::placeholder {
+    color: #9c9c9c;
+  }
+}
+
+.submitButton {
+  border-radius: 4px;
+  border: 2px solid var(--button-background-color);
+  background-color: var(--main-background-color);
+  color: var(--button-background-color);
+  font-size: 24px;
+  width: 35%;
+  font-weight: 800;
+  padding: 5px 15px;
+  margin-top: 30px;
+  font-family: "Amiri", serif;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--button-background-color);
+    color: var(--main-background-color);
+    transition: 0.2s ease-in;
+    transform: scale(1.05);
+  }
+}
+
+.containerLeft {
+  flex: 2;
+  width: 100%; /* Adjust as needed */
+  height: 100%; /* Adjust as needed */
+}
+
+.containerLeft img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

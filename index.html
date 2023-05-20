@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="containerLeft"><img src="./assets/pic1.jpg" alt="" /></div>
+      <div class="containerRight">
+        <div class="headerTop">
+          <h2 class="header">
+            سجل بالنشرة الاخبارية الاسبوعية عشان توصلك كل الحقائق الطبية
+            للمحافظة على صحتك النفسية والجسدية باسهل طريقة واقل وقت
+            <br /><br />
+            <span style="font-style: italic"> انت تعرف ايش المفروض تسوي </span>
+          </h2>
+        </div>
+
+        <div class="headerBottom">
+          <label>لنبدا الان!</label>
+          <fieldset class="fieldset" action="#">
+            <div class="grid">
+              <div class="make">
+                <label for="username">اسمك الاول</label>
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  placeholder="اسمك الاول"
+                />
+              </div>
+              <div class="make">
+                <label for="lastname">اسم العائلة</label>
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  placeholder="اسم العائلة"
+                />
+              </div>
+              <div class="make">
+                <label for="email">ايميلك</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="ايميلك"
+                />
+              </div>
+              <div class="make">
+                <label for="phonenumber">رقم جوالك</label>
+                <input
+                  type="number"
+                  name="phonenumber"
+                  id="phonenumber"
+                  placeholder="رقم جوالك"
+                />
+              </div>
+              <div class="make">
+                <label for="password">الرقم السري</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="الرقم السري"
+                />
+              </div>
+              <div class="make">
+                <label for="confirmpassword">اكد الرقم السري</label>
+                <input
+                  type="password"
+                  name="confirmpassword"
+                  id="confirmpassword"
+                  placeholder="اكد الرقم السري"
+                />
+              </div>
+            </div>
+
+            <button class="submitButton" type="submit">اصنع حسابك</button>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
